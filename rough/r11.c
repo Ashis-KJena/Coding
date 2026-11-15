@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int r,c;
+
+    printf("Enter rows: ");
+    scanf("%d",&r);
+
+    printf("Enter columns: ");
+    scanf("%d",&c);
+
+    int a[r][c];
+
+    printf("Enter matrix elements:\n");
+
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+            scanf("%d",&a[i][j]);
+    }
+
+    printf("Array:\n");
+
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+            printf("%d ",a[i][j]);
+
+        printf("\n");
+    }
+
+    return 0;
+}
